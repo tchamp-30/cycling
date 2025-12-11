@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>JCKSNSPADES Cycling Maps</title>
+        <link rel="stylesheet" href="home-page.css">
+        <style>
+            .about-photo-container {
+                display: flex;
+                width: 100%;
+                height: 500px;
+            }
+            .about-iframe {
+                border: 2px dashed #aaa;
+                background: #f8f8f8;
+                width: 50%;
+                flex-shrink: 0;
+            }
+            .about-spacer {
+                width: 20px;
+                flex-shrink: 0;
+            }
+            .about-title {
+                font-size: 50px;
+                text-align: center;
+            }
+            .about-info {
+                width: 50%;
+                flex-shrink: 0;
+                align-self: flex-start;
+            }
+            .about-description {
+                margin-right: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title-bar">
+            <h1>JCKSNSPADES Cycling Maps</h1>
+        </div>
+        <div class="top-bar-container">
+            <div class="top-bar">
+                <a href="home-page.html"><button class="top-bar-button">Home</button></a>
+                <a href="cycling-home.html" class="top-bar-button">Cycling</a>
+                <button class="top-bar-button">Horse Racing</button>
+                <button class="top-bar-button">Basketball</button>
+            </div>
+        </div>
+        <div class="top-bar-spacer"></div>
+        <div class="content">
+            <!-- 3D Game Placeholder -->
+            <div class="about-photo-container">
+                <iframe 
+                    srcdoc='<html><body style="margin:0;padding:0;overflow:hidden;background:#f8f8f8;"><img src="data:image/jpeg;base64,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" style="width:100vw;height:100vh;object-fit:cover;display:block;border:0;margin:0;padding:0;"/></body></html>' 
+                    width="800" 
+                    height="450" 
+                    class="about-iframe"
+                    title="Cycling Map">
+                </iframe>
+                <div class="about-spacer"></div>
+                <div class="about-info">
+                    <h1 class="about-title">Description</h1>
+                    <p class="about-description">Here's some llama facts cuz i'm sure you wouldn't want me writing a description about you atm.</p>
+                    <br>
+                    <p class="about-description">Llamas, members of the camelid family native to the Andes Mountains in South America, are remarkably social and intelligent creatures known for their resilience and adaptability. Possessing a calm disposition and an inquisitive nature, these animals communicate through a variety of sounds, most notably a soft hum to express curiosity or contentment. If agitated or overloaded as pack animals, which they have been for thousands of years, they may lay down and refuse to move, a behavior often accompanied by a hiss or the projection of partially digested green material up to 15 feet. Beyond their traditional roles in providing meat, fiber, and transport, llamas today serve as effective livestock guardians against predators and are even trained as gentle therapy animals in hospitals and nursing homes.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

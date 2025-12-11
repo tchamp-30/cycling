@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>JCKSNSPADES Cycling Home</title>
+        <link rel="stylesheet" href="home-page.css">
+    </head>
+    <body>
+        <div class="title-bar">
+            <h1>JCKSNSPADES UCI Rankings</h1>
+        </div>
+        <div class="top-bar-container">
+            <div class="top-bar">
+                <a href="cycling-home.html"><button class="top-bar-button">Home</button></a>
+                <button class="top-bar-button" onclick="loadYear('2019-home.html'); return false;">2019</button>
+                <button class="top-bar-button" onclick="loadYear('2020-home.html'); return false;">2020</button>
+                <button class="top-bar-button" onclick="loadYear('2021-home.html'); return false;">2021</button>
+                <button class="top-bar-button" onclick="loadYear('2022-home.html'); return false;">2022</button>
+                <button class="top-bar-button" onclick="loadYear('2023-home.html'); return false;">2023</button>
+                <button class="top-bar-button" onclick="loadYear('2024-home.html'); return false;">2024</button>
+                <button class="top-bar-button" onclick="loadYear('2025-home.html'); return false;">2025</button>
+            </div>
+        </div>
+        <div class="top-bar-spacer"></div>
+        <div class="content-area">
+            <div class="iframe-container">
+                <p>Click a year to see the rankings.</p>
+                <iframe id="yearContentFrame" src="about:blank"></iframe>
+            </div>
+        </div>
+        <script>
+            function loadYear(url) {
+                document.getElementById('yearContentFrame').src = url;
+            }
+        </script>
+        <style>
+            .content-area {
+                padding: 20px;
+                margin-top: 0;
+            }
+            .iframe-container {
+                border: 2px solid #333;
+                border-radius: 4px;
+                padding: 10px;
+                background-color: #f9f9f9;
+                min-height: 600px;
+            }
+            #yearContentFrame {
+                width: 100%;
+                height: 600px;
+                border: none;
+                background-color: white;
+            }
+        </style>
+    </body>
+</html>

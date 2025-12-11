@@ -1,0 +1,11 @@
+Model Information:
+* title:	Obstacle conus
+* source:	https://sketchfab.com/3d-models/obstacle-conus-9c351c8ce517403ca609c6352da7d524
+* author:	AAAndrey (https://sketchfab.com/AAAndrey)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Obstacle conus" (https://sketchfab.com/3d-models/obstacle-conus-9c351c8ce517403ca609c6352da7d524) by AAAndrey (https://sketchfab.com/AAAndrey) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

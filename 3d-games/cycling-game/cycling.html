@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling 3D Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #game-container {
+            width: 100%;
+            height: 100vh;
+            min-width: 800px;
+            min-height: 450px;
+        }
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+        .control-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            background-color: #ffd038;
+            color: #222;
+            border: 2px solid #222;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+        .control-button:hover {
+            background-color: #222;
+            color: #ffd038;
+        }
+        #score-display {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            color: #222;
+            background-color: #ffd038;
+            border: 2px solid #222;
+            border-radius: 5px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        #loading-screen {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 40px 60px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 3000;
+            font-family: Arial, sans-serif;
+        }
+        #loading-screen h2 {
+            margin: 0 0 20px 0;
+            font-size: 24px;
+        }
+        #loading-screen .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #ffd038;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-screen">
+        <h2>Loading...</h2>
+        <div class="spinner"></div>
+    </div>
+    <div class="controls">
+        <button id="play-button" class="control-button">Play</button>
+        <button id="pause-button" class="control-button">Pause</button>
+        <div id="score-display">Score: 0</div>
+    </div>
+    <div id="game-container"></div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="cycling.js"></script>
+</body>
+</html>
+
